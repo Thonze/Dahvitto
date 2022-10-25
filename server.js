@@ -6,6 +6,7 @@ const defaultRoute = require('./routes/defaultRoutes')
 // const {globalVariables} = require('./config/configuration')
 // const flash = require('connect-flash');
 // const session = require('express-session')
+PORT = process.env.PORT || 4008
 
 const app = express()
 
@@ -39,6 +40,6 @@ app.use('/', defaultRoute)
 
 
 app.listen
-(8000, (req,res) => {
+(PORT, (req,res) => {
     console.log('server is runing')
 })
